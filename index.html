@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <script src="app.js" defer></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="start-board" id="start-board">
+      <img src="assets/logo.svg" alt="logo" class="logo" />
+      <div class="choice">
+        <p class="para1">Pick player 1's mark</p>
+        <div class="p1-choice">
+          <div class="x" id="player-cross"></div>
+          <div class="o player-1" id="player-circle"></div>
+        </div>
+        <div class="para2">Remember: X goes first</div>
+      </div>
+      <div class="buttons-start">
+        <button id="cpu-btn">New Game (vs CPU)</button>
+        <button id="player-btn">New Game (vs player)</button>
+      </div>
+    </div>
+
+    <div id="game-board">
+      <div class="flex">
+        <img src="assets/logo.svg" alt="logo" class="logo" />
+        <p id="turn-box">
+          <img src="assets/icon-x.svg" alt="" id="turn" />turn
+        </p>
+        <button id="restart-btn"></button>
+      </div>
+
+      <div class="grid cross-hover" id="grid">
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
+        <div id="8"></div>
+        <div id="9"></div>
+      </div>
+
+      <div class="scores">
+        <div class="blue-box">
+          <p id="icon-player">X (You)</p>
+          <p id="blue-score"></p>
+        </div>
+        <div class="silver-box">
+          <p>Ties</p>
+          <p id="ties"></p>
+        </div>
+        <div class="orange-box">
+          <p id="icon-other">X (CPU)</p>
+          <p id="orange-score"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="end-screen" class="end-screen">
+      <div id="end-box">
+        <p id="text-lose" class="solo">Oh no, you lost</p>
+        <p id="text-win" class="solo">You won!</p>
+        <p class="multiplayer winner">
+          Player <span id="winner-num"></span>wins!
+        </p>
+        <h4 id="winner-text" class="winner">
+          <img src="" alt="" id="winner-symbol" />takes the round
+        </h4>
+        <p id="text-tie">Round tied</p>
+        <p class="restart" id="restart-question">Restart game?</p>
+
+        <div class="buttons-end">
+          <button class="end-btn quit">Quit</button>
+          <button class="end-btn next-rd">Next round</button>
+          <button class="restart cancel">No, cancel</button>
+          <button class="restart cont">Yes, restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

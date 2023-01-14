@@ -1,0 +1,14 @@
+{
+  "name": "new-tictactoe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe Game",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
